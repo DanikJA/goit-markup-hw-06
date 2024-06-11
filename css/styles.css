@@ -1,5 +1,5 @@
-                              /* css for index.html */
-/* колір основного шрифту   color: #212121; */
+                                                 /* css for index.html */
+                                       /* колір основного шрифту   color: #212121; */
 
 * {
     margin: 0;
@@ -23,7 +23,6 @@ li {
 html {
     scroll-behavior: smooth;
 }
-
 
 .site-second {
     margin-left: auto;
@@ -201,9 +200,6 @@ body {
     color: var(--blue);
 }
 
-
-
-
 .site-second .studio-link {
     color: var(--grey-color);
     letter-spacing: 0.02em;
@@ -227,7 +223,6 @@ body {
 .site-second .studio-link:focus {
     color: var(--blue);
 }
-
 
 .feature-list .title {
     font-weight: 700;
@@ -334,7 +329,7 @@ z-index: 10;
 
 transition:opacity,visibility;
 transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, -1);
+transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 }
 
@@ -345,10 +340,10 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, -1);
 }
 
 .backdrop.is-hidden .modal-wrapper{
-    transform:translate(-50%, -50%) scale(0,5); 
+    transform:translate(-50%, -50%) scale(2); 
 }
 
-.modal-wrapper{
+.modal-wrapper {
 position: absolute;
 transform: translate(-50%,-50%) scale(1);
 top: 50%;
@@ -382,7 +377,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 transition-property: box-shadow,opacity,visibility;
 transition-duration: 250ms;
 transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
 }
 
 .site-nav {
@@ -393,8 +387,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     display: flex;
 }
 
-
-
 .site-nav .item:not(:last-child) {
     margin-right: 50px;
 }
@@ -402,7 +394,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 .site-second .item1:not(:last-child) {
     margin-right: 50px;
 }
-
 
 .feature-list .ul {
     display: flex;
@@ -449,7 +440,6 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
  position: relative;
 }
 
-
 .paragraph-img {
 position: absolute;
 font-weight: 700;
@@ -464,8 +454,6 @@ right: 0;
 padding-top: 27px;
 padding-bottom: 27px;
 }
-
-
 
 .main-nav {
     display: flex;
@@ -495,8 +483,6 @@ padding-bottom: 27px;
     border-radius: 0 0 4px 4px;
     box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 }
-
-
 
 .bottom-section .img {
     display: block;
@@ -607,7 +593,6 @@ padding-bottom: 27px;
     background: #f5f4fa;
     margin-bottom: 30px;
 }
-
 
 .footer-div1 {
     flex-direction: column;
@@ -738,12 +723,10 @@ button {
   opacity: 1;
 }
 
-
  .overlay{
   position: relative;
   overflow: hidden;
  }                                 
-
 
 .project-text{
     position: absolute;
@@ -763,8 +746,6 @@ button {
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
 
 .tagline .list-links:hover,
 .tagline .list-links:focus {
