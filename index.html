@@ -100,15 +100,12 @@
             <label class="modal-label" for="coment">Коментар</label>
             <textarea class="holder-text" name="feedback" id="coment" rows="3" placeholder="Введіть текст" ></textarea>
             
-           <input class="text-input" type="checkbox" id="policy" required>
+           <input class="text-input" type="checkbox" id="policy" name="text-input" required>
            <label class="policy-label" for="policy">Погоджуюся з розсилкою та приймаю <span class="label-span">Умови договору</span></label>
           
           <button class="modal-submit" type="submit">Відправити</button>
 
         </form>
-
-
-
 
 
 
@@ -480,9 +477,26 @@
                     </li>
                 </ul>
                 </div>
+
+
+                <form class="footer-form">
+                    <label class="footer-label" for="email">Підпишіться на розсилку</label>
+                    <input class="footer-input" type="email" name="footer-input" placeholder="E-mail">
+                    <button class="footer-btn" type="button">Підписатися</button>
+                    <svg class="footer-svg" width="24" height="24">
+                        <use href="./іmages/sprite.svg#iconicon-send"></use>
+                    </svg>
+                </form>
+
+                
      </div>
             
-        
+     
+       
+
+    
+
+
     </footer>
 
   

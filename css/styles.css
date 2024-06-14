@@ -392,8 +392,12 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form{
-    display: column;
+    display: block;
 }
+
+
+
+
 textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -1012,6 +1016,57 @@ a {
 
 
 
+.footer-label{
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
 
 
+.footer-input{
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    width: 358px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: rgba(33, 150, 243, 0);
+    color: #fff;
+    padding-left: 16px;
+    margin-right: 12px;
+}
+
+.footer-btn{
+    position: relative;
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    background: #2196f3;
+    border: none;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.875;
+    letter-spacing: 0.06em;
+    text-align: center;
+    color: #fff;
+}
+
+.footer-svg{
+    position: absolute;
+}
+
+
+.footer-input::placeholder{
+    padding-left: 16px;
+}
+
+
+.footer-form {
+    margin-left: 93px;
+}
 
