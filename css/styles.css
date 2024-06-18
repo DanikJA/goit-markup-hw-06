@@ -396,13 +396,11 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-
-
 textarea{
     border: 1px solid rgba(33, 33, 33, 0.2);
+    width: 100%;
     border-radius: 4px;
-    width: 448px;
-    height: 120px;
+    padding: 11px ;
     resize: none;
     padding: 12px 16px;
 }
@@ -410,16 +408,22 @@ textarea{
 .input-mod{
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    width: 448px;
+    width: 100%;
     height: 40px;
     padding-left: 43px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .input-mod:hover,
 .input-mod:focus{
-    border: 1px solid #2196f3;
+    outline: none;
+    border: 1px solid var(--blue);
 }
 
+.input-mod:hover ~ .modal-svg,
+.input-mod:focus ~ .modal-svg{
+    fill:var(--blue);
+}
 
 .modal-label{
     display: block;
@@ -427,13 +431,21 @@ textarea{
     letter-spacing: 0.01em;
     color: var(--grey-color);
     margin-top: 10px;
-    margin-bottom: 4px;
+    margin-bottom: 4px; 
 }
 
 
 
+.holder-text:hover,
+.holder-text:focus{
+    outline: none;
+    border: 1px solid var(--blue);  
+}
+
 
 .policy-label{
+    display: flex;
+    align-items: center;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71429;
@@ -441,14 +453,34 @@ textarea{
     color: var(--grey-color);
 }
     
- .label-span{
+ .policy-link{
     text-decoration: underline;
     text-decoration-skip-ink: none;
     color: var(--blue);
  }
 
+.icon-check {
+    display: inline-block;
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+}
+
+.text-input:checked+.icon-check {
+   background-image: url('../іmages/icon\ check.svg');
+   background-color: var(--blue);
+   background-size: contain;
+   background-origin: border-box;
+   border-color: var(--blue);
+}
+
+
+
  .holder-text{
     margin-bottom: 20px;
+    height: 120px;
  }
        
 .text-input{
@@ -456,7 +488,13 @@ textarea{
     justify-content: center;
     width: 16px;
     height: 15px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
 }
+
+
 
 .modal-submit {
     display: block;
@@ -510,16 +548,6 @@ textarea::placeholder{
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
-
-
-
-
-
-
-
-
-
-
 
 .site-nav {
     display: flex;
@@ -1014,8 +1042,6 @@ a {
     background: #f5f4fa;
 }
 
-
-
 .footer-label{
     display: block;
     font-weight: 700;
@@ -1026,24 +1052,30 @@ a {
     margin-bottom: 20px;
 }
 
-
 .footer-input{
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     width: 358px;
-    height: 50px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: rgba(33, 150, 243, 0);
+    padding: 15px 16px;
     color: #fff;
-    padding-left: 16px;
-    margin-right: 12px;
+    
+        transition-property:border ;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-input:hover,
+.footer-input:focus{
+    outline: none;
+    border: 1px solid #fff;
 }
 
 .footer-btn{
-    position: relative;
+    display: inline-flex;
     border-radius: 4px;
-    width: 200px;
-    height: 50px;
+    padding: 9px 28px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2196f3;
     border: none;
@@ -1054,15 +1086,21 @@ a {
     letter-spacing: 0.06em;
     text-align: center;
     color: #fff;
+    margin-left: 12px;
 }
 
 .footer-svg{
-    position: absolute;
+    margin-left: 10px;
 }
 
 
+
 .footer-input::placeholder{
-    padding-left: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
 }
 
 
