@@ -478,6 +478,7 @@ textarea{
     border: 2px solid #212121;
     border-radius: 2px;
     margin-right: 7px;
+    cursor: pointer;
 }
 
 .text-input:checked + .icon-check {
@@ -503,7 +504,7 @@ textarea{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-
+    visibility: hidden;
 }
 
 
