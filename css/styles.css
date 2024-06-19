@@ -350,6 +350,7 @@ top: 50%;
 left: 50%;
 border-radius: 4px;
 width: 528px;
+height: 581px;
 box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
 background: #fff;
 padding: 40px;
@@ -381,7 +382,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .modal-btn:hover,
 .modal-btn:focus{
-    fill:var(--blue);
+       fill:var(--blue);
         transition-property: fill;
         transition-duration: 250ms;
         transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -391,7 +392,7 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 .font-title{
     display: block;
-    margin-bottom: 12px;
+    margin-bottom:2px;
         font-weight: 700;
         font-size: 20px;
         letter-spacing: 0.03em;
@@ -440,7 +441,6 @@ textarea{
     font-size: 12px;
     letter-spacing: 0.01em;
     color: var(--grey-color);
-    margin-top: 10px;
     margin-bottom: 4px; 
 }
 
@@ -464,9 +464,10 @@ textarea{
 }
     
  .policy-link{
+    display: block;
     text-decoration: underline;
-    text-decoration-skip-ink: none;
     color: var(--blue);
+    margin-left: 5px;
  }
 
 .icon-check {
@@ -535,6 +536,12 @@ textarea{
 
 .modal-div{
 position: relative;
+margin-top: 10px;
+}
+
+.polycy-title{
+    display: block;
+    margin-right: 10px;
 }
 
 .modal-svg{
