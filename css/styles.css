@@ -472,6 +472,7 @@ textarea{
 
 .icon-check {
     display: inline-block;
+    appearance: none;
     width: 16px;
     height: 15px;
     border: 2px solid #212121;
@@ -479,7 +480,7 @@ textarea{
     margin-right: 7px;
 }
 
-.text-input:checked+.icon-check {
+.text-input:checked + .icon-check {
    background-image: url('../іmages/icon\ check.svg');
    background-color: var(--blue);
    background-size: contain;
