@@ -374,10 +374,20 @@ transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
    align-items: center;
    justify-content: center;
 
-transition-property: box-shadow,opacity,visibility;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+   transition-property: fill;
+   transition-duration: 250ms;
+   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-btn:hover,
+.modal-btn:focus{
+    fill:var(--blue);
+        transition-property: fill;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
 
 .font-title{
     display: block;
@@ -1075,7 +1085,7 @@ a {
 .footer-btn{
     display: inline-flex;
     border-radius: 4px;
-    padding: 9px 28px;
+    padding: 9px 40px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
     background: #2196f3;
     border: none;
