@@ -470,27 +470,26 @@ textarea{
     margin-left: 5px;
  }
 
-.icon-check {
-    display: inline-block;
+.text-input {
     appearance: none;
+    display: inline-block;
     width: 16px;
     height: 15px;
+    margin-right: 7px;
     border: 2px solid #212121;
     border-radius: 2px;
-    margin-right: 7px;
-    cursor: pointer;
+    transition-property: border-color, background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
-.text-input:checked + .icon-check {
-   background-image: url('../іmages/icon\ check.svg');
-   background-color: var(--blue);
-   background-size: contain;
-   background-origin: border-box;
-   border-color: var(--blue);
-}
-
-.text-input:focus + .icon-check {
-    border: 2px solid var(--blue);
+.text-input:checked {
+    border-color: transparent;
+    background-color: #2196f3;
+    background-image: url(../іmages/icon\ check.svg);
+    background-size: contain;
+    background-origin: border-box;
 }
 
  .holder-text{
@@ -498,19 +497,6 @@ textarea{
     height: 120px;
  }
        
-.text-input{
-    align-items: center;
-    justify-content: center;
-    width: 16px;
-    height: 15px;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-
-}
- 
-
-
 .modal-submit {
     display: block;
     margin-right: auto;
