@@ -489,7 +489,9 @@ textarea{
    border-color: var(--blue);
 }
 
-
+.text-input:focus + .icon-check {
+    border: 2px solid var(--blue);
+}
 
  .holder-text{
     margin-bottom: 20px;
@@ -504,9 +506,9 @@ textarea{
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    visibility: hidden;
-}
 
+}
+ 
 
 
 .modal-submit {
